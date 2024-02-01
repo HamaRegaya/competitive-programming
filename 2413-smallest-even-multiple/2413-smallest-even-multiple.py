@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         if(1 <= n <= 150):
-            if(n%2):
-                return n*2
-            else:
+            if(n%2==0):
                 return n
+            else:
+                return n*2
