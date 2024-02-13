@@ -6,5 +6,5 @@ class Solution(object):
         :rtype: List[bool]
         """
         maxC = max(candies)
-        ans = [ num + extraCandies >= maxC for num in candies]
-        return ans
+        a = [ n + extraCandies >= maxC for n in candies]
+        return a
