@@ -1,6 +1,8 @@
 class Solution:
     def longestMountain(self, arr: List[int]) -> int:
         n = len(arr)
+        if n < 3:
+            return 0
         max_length = 0
         i = 1
 
@@ -20,4 +22,4 @@ class Solution:
             else:
                 i += 1
 
-        return max_length if max_length >= 3 else 0
+        return max_length
