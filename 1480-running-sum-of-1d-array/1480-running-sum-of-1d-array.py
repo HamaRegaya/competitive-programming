@@ -4,10 +4,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        running_sum = 0
-        result = []
-        for num in nums:
-            running_sum += num
-            result.append(running_sum)
-        return result
-        
+        T=[]
+        sum=0
+        for i in nums:
+            sum += i
+            T.append(sum)
+        return T
